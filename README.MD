@@ -88,7 +88,7 @@ curl "http://127.0.0.1:8000/word/world?guess=plane"
 - Body: Form data with a single field text.
 Example:
 ```
-curl -X POST "http://127.0.0.1:8000/wordseg" -d "text=worldplanecrane"
+curl -X POST "http://127.0.0.1:8000/wordseg" -H "Content-Type: application/x-www-form-urlencoded" -d "text=example"
 ```
 
 ## Testing the API
@@ -104,5 +104,5 @@ curl "http://127.0.0.1:8000/random?guess=brake&size=5"
 ```
 Test Word Segmentation:
 ```
-curl -X POST "http://127.0.0.1:8000/wordseg" -d "text=worldplanecrane"
+curl -X POST "http://127.0.0.1:8000/wordseg" -H "Content-Type: application/x-www-form-urlencoded" -d "text=example"
 ```
